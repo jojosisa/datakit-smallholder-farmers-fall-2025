@@ -10,11 +10,12 @@ v1 Information:
 <img width="1137" height="189" alt="image" src="https://github.com/user-attachments/assets/ce503605-06b7-48fc-866e-07da6c0b81ae" />
 
 		For each of these users, we also counted the number of users served, and the number of questions responded to.
-
-	Dependencies:
-		This folder contains the Jupyter notebook used to get the results displayed in the table above.
+	
+	Code:
+		Challenge3_Jesper_v1.ipynb --> Jupyter notebook used to get the results displayed in the table above.
 		To run the notebook, save the raw dataset as "datakit.csv" in a subfolder titled "Raw_data".
-
+		
+	Dependencies:
 		Python 2.7.15
 		Jupyter 7.4.5
 		pandas 2.3.2
