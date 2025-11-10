@@ -38,7 +38,7 @@ The project brief to guide you for this DataKit event can be found [here](https:
 
 ***N.B.*** Please do not upload the challenge dataset to public dataset repositories such as Kaggle or share the data via public Google Drive or Dropbox links. 
 
-_While we recognize this imay facilitate collaboration with other volunteers, our partners at Producers Direct are looking to develop the legal, governance, and technical infrastructure for their global cooperative. This will focus on allowing farmers to retain control of their data, but allow third parties access to the data in specific circumstances._
+_While we recognize this may facilitate collaboration with other volunteers, our partners at Producers Direct are looking to develop the legal, governance, and technical infrastructure for their global cooperative. This will focus on allowing farmers to retain control of their data, but allow third parties access to the data in specific circumstances._
 
 
 # How to contribute: Challenges
