@@ -87,7 +87,7 @@ The seasonal question volume validates two major crisis periods that require sep
 
 ### For Further Analysis (Future Work)
 1.  **Acquire Granular Data:** Integrate **daily weather data**, especially Soil Moisture and Evapotranspiration, for a more accurate predictor of short-term stress.
-2.  **Predictive Modeling:** Start a new dedicated notebook (`Challenge one/notebooks/04_Predictive_Forecasting.ipynb`) to build a time-series model (e.g., ARIMA or Prophet) to forecast peak question volume for the most sensitive topics.
+2.  **Predictive Modeling:** Build a time-series model to forecast peak question volume for the most sensitive topics.
 
 ---
 
