@@ -2,11 +2,11 @@
 # Submission - 1
 
 ```
-# Project: Lexical Classification of Farmer Questions (Traditional Method)
+# Challenge-4-crop-questions-traditional method.ipynb
 
 ## 1. Executive Summary
 
-This project utilizes a **Prioritized Lexical Classification** approach to categorize 100,000+ farmer questions into predefined business concepts (e.g., Pest & Disease, Market & Finance). This method is fast and highly interpretable.
+This project utilizes a **Prioritized Lexical Classification** approach to categorize 11.5M rows of **English** farmer questions into predefined business concepts (e.g., Pest & Disease, Market & Finance).
 
 **The classification relies on finding keywords in the question text based on a hierarchical priority structure, ensuring consistency with predefined business rules.**
 
@@ -14,9 +14,11 @@ This project utilizes a **Prioritized Lexical Classification** approach to categ
 
 * The Lexical approach provides rapid, interpretable topic assignments based on explicit keyword rules.
 
-* The method requires meticulous maintenance of the keyword dictionary to remain effective against non-standard text.
+* This method requires meticulous maintenance of the keyword dictionary to remain effective against non-standard text.
 
-* Visualizations were successfully generated using the rule-based categories to identify primary areas of concern.
+* Preliminary results show a clear imbalance, with 66% being Specific Questions and roughly 34% being General Questions.
+
+* The line chart shows that while Specific Questions generally dominate, I observed a distinct convergence between August 2021 and September 2021.
 
 ## 2. Data
 
@@ -24,10 +26,10 @@ This project utilizes a **Prioritized Lexical Classification** approach to categ
 | :--- | :--- | :--- |
 | **Source Data** | `parquet` file in the Kaggle context) | Loaded |
 | **Target Column** | `question_content_cleaned` | Used for matching |
-| **Data Size** | Approx. 100,000+ rows | Processed |
+| **Data Size** | Approx. 11.5M rows | Processed |
 | **Time Span** | Long-term data analyzed | Categorized |
 
-## 3. Methodology: Prioritized Lexical Classification (FASTopic Logic)
+## 3. Methodology: Prioritized Lexical Classification
 
 The classification relies on a hierarchical, rule-based approach to ensure high-priority topics (like immediate risks) are classified first, minimizing ambiguity.
 
