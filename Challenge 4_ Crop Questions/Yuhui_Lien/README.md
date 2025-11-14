@@ -136,19 +136,12 @@ Seed topics enforce business logic:
 | `n_components` | UMAP | 5 | Simplify structure |
 
 ## 4. Results and Visualization
-[!Subtopic Classification of General Questions using BERTopic]()
+[!Subtopic Classification of General Questions using BERTopic](https://github.com/yhlien1221/datakit-smallholder-farmers-fall-2025/blob/main/Challenge%204_%20Crop%20Questions/Yuhui_Lien/pictures/bertopic_overall_distribution_full_label_final.png)
 
-### A. Overall Topic Distribution
+### A. Subtopic Classification of General Questions using BERTopic
 
-Model produces coherent topics aligned with business themes.
+This BERTopic distribution chart suggests that the current model parameters still require further optimization to achieve a balanced and coherent classification. The most notable issue is the dominant presence of generic and vague clusters, such as the 'what_where_you_how' topic at 17.3%, which indicates the model is failing to create highly specific or actionable groups. Furthermore, the top four topics account for over two-thirds of the data, with several categories being overly broad (e.g., 'animal_milk_animals_what' at 16.1%), preventing a clear, fine-grained understanding of the underlying farmer concerns. This imbalance signals the need for refining hyperparameters or utilizing a more restrictive set of seed topics.
 
-### B. Time-Based Topic Trends
-
-Daily analysis shows emerging shifts in focus over the three-day window.
-
-## 5. Conclusion and Next Steps
-
-The Guided BERTopic pipeline resolves clustering instability for large-scale, noisy text.
 
 ### Key Output Columns:
 
@@ -159,4 +152,5 @@ The Guided BERTopic pipeline resolves clustering instability for large-scale, no
 ### Next Steps:
 
 1. Run full dataset (3M rows)  
-2. Visualize hierarchical structure  
+2. Visualize hierarchical structure 
+Optimize Clustering Parameters: Refine BERTopic hyperparameters (e.g., min_topic_size, UMAP settings) to reduce the volume of vague or overly broad clusters and improve the specificity of subtopic assignments. 
