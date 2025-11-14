@@ -136,7 +136,7 @@ Seed topics enforce business logic:
 | `n_components` | UMAP | 5 | Simplify structure |
 
 ## 4. Results and Visualization
-[!Subtopic Classification of General Questions using BERTopic](https://github.com/yhlien1221/datakit-smallholder-farmers-fall-2025/blob/main/Challenge%204_%20Crop%20Questions/Yuhui_Lien/pictures/bertopic_overall_distribution_full_label_final.png)
+![Subtopic Classification of General Questions using BERTopic](https://github.com/yhlien1221/datakit-smallholder-farmers-fall-2025/blob/main/Challenge%204_%20Crop%20Questions/Yuhui_Lien/pictures/bertopic_overall_distribution_full_label_final.png)
 
 ### A. Subtopic Classification of General Questions using BERTopic
 
