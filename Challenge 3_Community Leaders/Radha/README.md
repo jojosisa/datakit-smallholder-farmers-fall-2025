@@ -2,8 +2,7 @@
 
 
 
-&nbsp;Since the original Dataset is huge, I considered a 10 % sample of data for my analysis
-
+&nbsp;Since the original Dataset is huge, I considered a 10 % sample of data for my analysis. The same analysis can be applied to the entire dataset.
 
 
 2\. Metric Categories
@@ -14,7 +13,7 @@ We compute three families of metrics:
 
 
 
-🔹 A. Basic Productivity Metrics
+A. Basic Productivity Metrics
 
 Metric	Meaning
 
@@ -31,8 +30,7 @@ mean\_response\_words		Richness/length of messages
 These measure responsiveness \& helpfulness.
 
 
-
-🔹 B. Language Metrics
+ B. Language Metrics
 
 Metric	Meaning
 
@@ -47,8 +45,7 @@ num\_question\_languages\_answered	Languages in which the farmer is able to answ
 These measure accessibility \& multilingual capacity.
 
 
-
-🔹 C. Consistency Metrics
+ C. Consistency Metrics
 
 
 
