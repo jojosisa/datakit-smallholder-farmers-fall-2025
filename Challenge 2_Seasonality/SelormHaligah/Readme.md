@@ -25,7 +25,7 @@ A chi-squared test of independence was also performed to validate whether indeed
 Power BI was used to visualize the results and present the insights clearly
 
 ### Tools and Technologies
-- **Programming Language**: Python 3.x / R
+- **Programming Language**: Python 3.
 - **Key Libraries**: pandas, scikit-learn, NLTK, fuzzywuzzy, numpy
 - **GenAI Tools Used**: ChatGPT
 - **Other Tools**: Jupyter Notebook, Power BI
@@ -54,11 +54,8 @@ In testing for association between the questions being asked and the associated 
 There were a total of 7.12 million questions asked in the English dataset for Kenya out of which 1.64 million were unique. After matching, the seasons identified were planting, growing and harvesting, with some farmers asking different combinations of questions. Some questions were general and did not relate to the farming season. Such question revolved around animal farming or other agricultural issues. General questions were the most questions asked in the dataset with a total of 5.26 million questions. Planting questions were the second most asked questions in the dataset, representing 1.58 million and growing questions representing 218 thousand questions. Harvesting questions accounted for 13 thousand questions. The remaining questions were a combination of planting and growing, planting and harvesting, harvesting and growing or planting, harvesting and growing questions. Proportionately, General questions accounted for 73.9% of total questions asked, planting and growing accounted for 25.9% and harvesting 0.2%. Averagely, April recorded the highest questions, with general questions proportionately being the most with 71.9%, while October recorded the least questions being recorded with general questions also proportionately being the most with 73.3%.
 
 ## Visualizations
-![Visualization 1] (Image 1.png)
+![Visualization 1](Image 1.png)
 
-**Interpretation**: What this visualization shows and why it matters.
-
-### [Visualization 2 Title]
 ![Visualization 2](image 2.png)
 -----
 ### Methodological Limitations
@@ -84,11 +81,11 @@ pip install pandas numpy scikit-learn, fuzzywuzzy, nltk
 
 ### Running the Analysis
 ```bash
-# Start Jupyter Notebook
+Start Jupyter Notebook
 Run
-#Run the Power BI dashboard
-##Save the data ke_analysis_for_vis
- ##Run Kenya Data Analysis.pbix
+Run the Power BI dashboard
+Save the data ke_analysis_for_vis
+Run Kenya Data Analysis.pbix
 ```
 ------
 ### Dependencies
