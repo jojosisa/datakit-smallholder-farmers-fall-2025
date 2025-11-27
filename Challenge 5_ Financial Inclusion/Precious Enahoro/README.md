@@ -43,17 +43,6 @@ Description of the finding, supported by data and visualizations.
 - How this finding can be used
 - What actions it suggests
 
-## Visualizations
-
-### [Visualization 1 Title]
-![Visualization 1](visualizations/viz1.png)
-
-**Interpretation**: What this visualization shows and why it matters.
-
-### [Visualization 2 Title]
-![Visualization 2](visualizations/viz2.png)
-
-**Interpretation**: What this visualization shows and why it matters.
 
 ## Recommendations
 ### For Producers Direct
