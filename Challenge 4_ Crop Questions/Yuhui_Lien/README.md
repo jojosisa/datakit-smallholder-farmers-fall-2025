@@ -302,17 +302,15 @@ To better capture the specialized depth of conversation within each topic, **TF-
 
 The model calculates a final weighted score for Supply and determines the Mismatch Gap:
 
-**Average Demand Complexity**
+#### Average Demand Complexity
+`Average_Demand_Complexity = (Normalized_Question_Length * WEIGHT_COUNT) + (Semantic_Demand_Score * WEIGHT_SEMANTIC)`
 
-$Average\_Demand\_Complexity = (Normalized\ Question\ Length \times WEIGHT\_COUNT) + (Semantic\ Demand\ Score \times WEIGHT\_SEMANTIC)$
+#### Average Supply Detail
+`Average_Supply_Detail = (Normalized_Answer_Length * WEIGHT_COUNT) + (Semantic_Supply_Score * WEIGHT_SEMANTIC)`
 
-**Average Supply Detail**
+#### Knowledge Gap Score
+`Knowledge_Gap_Score = Average_Demand_Complexity - Average_Supply_Detail`
 
-$Average\_Supply\_Detail = (Normalized\ Answer\ Length \times WEIGHT\_COUNT) + (Semantic\ Supply\ Score \times WEIGHT\_SEMANTIC)$
-
-**Knowledge Gap Score**
-
-$Knowledge\_Gap\_Score = Average\_Demand\_Complexity - Average\_Supply\_Detail$
 
 
 ---
