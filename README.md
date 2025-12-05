@@ -53,6 +53,11 @@ By filtering for the **2.7 million English-language queries**, this analysis use
 ### 3. Geographic & Linguistic Constraints
 * **English Dominance:** Kenya and Uganda accounted for 99.9% of English queries. Tanzania's interaction was almost exclusively in Swahili, highlighting the need for future multi-lingual NLP models.
 
+### 4. Climate Vulnerability & Topic Synergy
+* **Quantified Decline in Rainfall:** Climate data validated a **statistically significant decline** in rainfall during Uganda's critical March–May planting season (average reduction of **12.33 mm per decade**, Mann-Kendall $p=0.01$).
+* **Flood Risk:** The analysis revealed that despite the overall decline, the onset of the rainy season is marked by short, **intense rainfall events**, increasing **flood risks** in mountainous areas (e.g., Mt. Elgon).
+* **NLP Validation:** The surge in **"Yield Optimization"** questions peaking in **August (harvest time)** correlates with the negative impact of the reducing March-May planting rains. Farmers are likely to proactively seek solutions after experiencing poor crop outcomes.
+
 ---
 
 ##  How to Run
@@ -62,8 +67,11 @@ By filtering for the **2.7 million English-language queries**, this analysis use
     ```bash
     pip install pandas scikit-learn matplotlib plotly pyarrow openpyxl
     ```
-3.  Run the Jupyter Notebook `Farmer_Questions_Clustering.ipynb`.
-4.  View the output report in `Cluster_Summary.xlsx`.
+    ##  Challenge 4
+3.  Run the Jupyter Notebook `Question Topic.ipynb`
+4.  View the output report in `Cluster Summary.xlsx` 
+    ##  Challenge 1
+5.  Run the Jupyter Notebook `Weather Patterns.ipynb`
 
 ---
 
