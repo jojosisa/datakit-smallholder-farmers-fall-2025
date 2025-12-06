@@ -42,7 +42,7 @@ wordcloud
 scikit-learn
 scipy
 missingno
-```
+
 **Suggested next analysis steps**:  
 - Compute season-relative proportions for targeted keywords (e.g., `harvest`, `storage`, `pest`, `price`) and visualize as heatmap.  
 - Run TF-IDF per season and per country to surface season-specific terms.  
