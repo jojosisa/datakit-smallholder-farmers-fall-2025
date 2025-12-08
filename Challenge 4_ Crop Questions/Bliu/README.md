@@ -1,19 +1,21 @@
-# [Beatrice Liu] - [Challenge 4 - Crop Questions] Analysis -- ** incomplete **
+# Beatrice Liu: Challenge 4 - Crop Questions Analysis 
 
 ## Overview
 Created bi-, tri-, and quad-grams and interactive visualizations for English questions by Kenyan farmers on top 5 topics -  cattle, tomato, maize, chickens, none -  to discern most common questions; these can be used by Producers Direct to create FAQ for smallholder farmers.  Sadly, I can't figure out how to display the interactive graphs here, but they are saved in the network_graphs folder.
+
+See 'farmers.bliu.pdf' for findings
 
 ## Research Questions
 - What insights can be gleaned from Crop-specific and Crop-Independent Questions?  
 
 
-## Methodology: detailed explanation in the Jupyter Notebooks
+## Methodology: *detailed explanation in the Jupyter Notebooks*
 
 ### Data Sources
 - Producers Direct Dataset
 - Swahili stopword and verb lemmatization files  
 
-### Approach /  Notebook overviews describe steps in greater detail - see 'Q4.Ngrams.Jupyter.Notebooks.pdf' for list of notebooks and running order
+### Approach /  *Notebook overviews describe steps in greater detail - see 'Q4.Ngrams.Jupyter.Notebooks.pdf' for list of notebooks and running order*
 1. **Step 1**: Data loading and initial exploration
 2. **Step 2**: Data cleaning and preprocessing
 3. **Step 3**: Data segmentation into smallers datasets for analysis: unique questions asked by farmers in 4 countries
@@ -23,7 +25,7 @@ Created bi-, tri-, and quad-grams and interactive visualizations for English que
 ### Output Files and Visualizations
 - Cleaned data files and interactive visualizations can be found in [google drive folder](https://drive.google.com/drive/folders/1tpwqTqoFfZCWvDvncJjaSbzzua0Y6Q_i?usp=sharing)
 - Note:  visualizations are uploaded to github in 'network_graphs' folder
-- N-gram frequency graphs can be found in individual notebooks; the PNG files created cropped out the text 
+- N-gram frequency graphs can be found in individual notebooks *(the PNG files that were written cropped out the n-gram text)*
 
 
 ### Tools and Technologies
@@ -40,50 +42,36 @@ Created bi-, tri-, and quad-grams and interactive visualizations for English que
 ### Human Review Process
 - All AI-generated code was reviewed and tested for accuracy
 - AI-generated insights were validated against the data
-- Modified AI suggestions in the following ways: coding errors
+- Modified AI suggestions in the following ways: to fix surprising number of coding errors
 
 
-## Key Findings: 
+## Key Findings: *Refer to 'farmers.bliu.pdf'*
 
-### Finding 1: [Translating from Swahili is a major roadblock]
+
+### Finding: [Translating from Swahili is a major roadblock]
 - Created bi-, tri-, grams- to cut down on # of characters that needed to be translated
 - Tri-grams from Swahili questions are similar to English ones...
 - but need *better* lemmatization, normalizing tools, Swahili corpus, and translator.  
 
 
-### Additional Findings:  Refer to 'farmers.pptx'
-Description of the finding, supported by data and visualizations.
+### Additional Findings:  *Refer to 'farmers.bliu.pdf'*
 
+## Visualizations: *see file list below* 
 
-## Visualizations
-
-### [Visualization 1 Title]
-![Visualization 1](visualizations/viz1.png)
-
-**Interpretation**: What this visualization shows and why it matters.
-
-### [Visualization 2 Title]
-![Visualization 2](visualizations/viz2.png)
-
-**Interpretation**: What this visualization shows and why it matters.
 
 ## Limitations and Challenges
 
 ### Data Limitations
 - Missing data issues:  gender, location other than country
 - Data quality concerns: vague data dictionary
-- Sample size or coverage limitations:  
+- Translations:  These African languages are linguistically complex, with unique syntax, idioms, and dialectal variations that are region-specific.  
 
 ### Methodological Limitations
-- Assumptions made: dropped 'blocked' and 'destroyed' users
-- Simplifications required
-- Alternative approaches not explored
+- Assumptions made: 'blocked' and 'destroyed' user statuses were dropped from analysis.
+  
 
 ### Technical Challenges
-- Computational constraints
-- Translation accuracy issues - YES, need Wwahili NL processor trained on agricultural terms
-- Other technical hurdles - 
-
+- Translation accuracy issues - YES! 
 
 
 ## Files in This Contribution
@@ -127,13 +115,10 @@ Bliu_analysis/
 ```
 
 
-### Contact and Collaboration
-
 **Author**: [Beatrice Liu]
 **GitHub**: @bl1412
  
 
 ---
 
-**Last Updated**: [Date]
-**Status**: [Analysis Complete, but Findings Summary is WIP]
+**Last Updated**: [12/7/25]
