@@ -9,23 +9,23 @@ See 'farmers.bliu.pdf' for findings
 - What insights can be gleaned from Crop-specific and Crop-Independent Questions?  
 
 
-## Methodology: *detailed explanation in the Jupyter Notebooks*
+## Methodology: *detailed explanations in the Jupyter Notebooks*
 
 ### Data Sources
-- Producers Direct Dataset
-- Swahili stopword and verb lemmatization files  
+- Producers Direct Dataset of WeFarm SMS
+- Swahili [stopword](https://data.mendeley.com/datasets/mmf4hnsm2n/1) and [verb conjugation](https://data.mendeley.com/datasets/rvt89578g5/1) files  
 
-### Approach /  *Notebook overviews describe steps in greater detail - see 'Q4.Ngrams.Jupyter.Notebooks.pdf' for list of notebooks and running order*
+### Approach: *Notebook overviews describe steps in greater detail - see 'Q4.Ngrams.Jupyter.Notebooks.pdf' for list of notebooks and their running order*
 1. **Step 1**: Data loading and initial exploration
 2. **Step 2**: Data cleaning and preprocessing
-3. **Step 3**: Data segmentation into smallers datasets for analysis: unique questions asked by farmers in 4 countries
+3. **Step 3**: Data segmentation into smaller datasets for analyses: unique questions asked by farmers in 4 countries
 4. **Step 4**: Visualization and interpretation
  
 
 ### Output Files and Visualizations
 - Cleaned data files and interactive visualizations can be found in [google drive folder](https://drive.google.com/drive/folders/1tpwqTqoFfZCWvDvncJjaSbzzua0Y6Q_i?usp=sharing)
 - Note:  visualizations are uploaded to github in 'network_graphs' folder
-- N-gram frequency graphs can be found in individual notebooks *(the PNG files that were written cropped out the n-gram text)*
+- N-gram frequency graphs can be found in individual notebooks *(the PNG files cropped out the n-gram text)*
 
 
 ### Tools and Technologies
@@ -42,14 +42,14 @@ See 'farmers.bliu.pdf' for findings
 ### Human Review Process
 - All AI-generated code was reviewed and tested for accuracy
 - AI-generated insights were validated against the data
-- Modified AI suggestions in the following ways: to fix surprising number of coding errors
+- Modified AI suggestions in the following ways: to fix a surprising number of coding errors
 
 
 ## Key Findings: *Refer to 'farmers.bliu.pdf'*
 
 
-### Finding: [Translating from Swahili is a major roadblock]
-- Created bi-, tri-, grams- to cut down on # of characters that needed to be translated
+### Finding: Translating from Swahili is a **major** roadblock
+- Created bi- and tri-grams in Swahili to reduce # of characters that needed to be translated
 - Tri-grams from Swahili questions are similar to English ones...
 - but need *better* lemmatization, normalizing tools, Swahili corpus, and translator.  
 
