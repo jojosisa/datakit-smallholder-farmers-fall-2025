@@ -1,7 +1,7 @@
 # Juan Eric Acha - Challenge 5: Financial Inclusion Analysis
 
 ## Overview
-Brief description of what you're analyzing and why it matters for Producers Direct and smallholder farmers.
+This analysis explores text-based communication data from smallholder farmers owned by Producers Direct. The primary objective is to understand their economic realities, common financial terminology, and to find financial inclusion opportunities for them. The insights derived are crucial for identifying specific opportunities to improve financial inclusion within this community, allowing Producers Direct to tailor support mechanisms, educational resources, and potential financial product partnerships to better meet farmer needs.
 
 ## Research Questions
 - Question 1: What are the economic realities of farmers? 
@@ -11,8 +11,7 @@ Brief description of what you're analyzing and why it matters for Producers Dire
 ## Methodology
 
 ### Data Sources
-- List the datasets you're using
-- Note any external data sources (weather, agricultural calendars, etc.)
+- Small Farmers' Text Data From Producers Ditect
 - Document any data preprocessing steps
 
 ### Approach
@@ -24,163 +23,79 @@ Brief description of what you're analyzing and why it matters for Producers Dire
 
 ### Tools and Technologies
 - **Programming Language**: Python 3.x
-- **Key Libraries**: pandas, numpy, matplotlib, seaborn, scikit-learn, etc.
-- **GenAI Tools Used**: ChatGPT, GitHub Copilot, etc. (be specific about what and how)
-- **Other Tools**: Jupyter Notebook, Tableau, etc.
+- **Key Libraries**: pandas, numpy, matplotlib, seaborn, scikit-learn, spacy.
+- **GenAI Tools Used**: Gemini
+- **Other Tools**: Jupyter Notebook, Tableau.
 
 ## Use of Generative AI
 
 ### Tools Used
-- **ChatGPT**: Used for [specific purpose, e.g., "generating initial code structure for data loading"]
-- **GitHub Copilot**: Used for [specific purpose, e.g., "autocompleting repetitive data cleaning code"]
+- **Gemini**: Generating initial code structure for data loading, cleaning, and processing.
 
 ### Human Review Process
 - All AI-generated code was reviewed and tested for accuracy
 - AI-generated insights were validated against the data
-- Modified AI suggestions in the following ways: [list modifications]
 
 ### AI-Assisted vs. Human-Created
-- **AI-Assisted**: [List which parts, e.g., "Initial data visualization code structure"]
-- **Human-Created**: [List which parts, e.g., "All analysis logic, interpretation, and conclusions"]
+- **AI-Assisted**: Initial data translation and visualization code structure
+- **Human-Created**: All analysis logic, interpretation, and conclusions
 
 ## Key Findings
 
-### Finding 1: [Dispite Difference In Languages, Most Small Farmers Have Similar Needs In East Africa]
-Description of the finding, supported by data and visualizations.
+### Finding 1: [Dispite Differences In Languages and Region, Most Small Farmers Have Similar Needs]
+Farmers were initially paired into groups. Those who spoke mainly English via text and those who spoke Swahili, Luganda, or Nyn. Both groups ask questions about the same topics regardless of the language differences. This trend was seen in the word cloud in visual 1A where the biggest words point to crops and caddle. This is further supported by the vizual 1B where word counts reveal the precise crop and caddle most farmers usually in inquire about
 
 **Implications for Producers Direct:**
-- How this finding can be used
-- What actions it suggests
+This finding suggest Producers Direct should focus on translating potential farming guides to multiple different languages as sopposed to rewriting guides to appeal to a particular language or territory. 
 
-### Finding 2: []
-Description of the finding, supported by data and visualizations.
-
-**Implications for Producers Direct:**
-- How this finding can be used
-- What actions it suggests
-
-### Finding 3: [Most Small Farmers Can Benefit From Different Financial Products]
-Description of the finding, supported by data and visualizations.
+### Finding 2: [Most Small Farmers Can Benefit From Different Financial Products]
+Farmers can use financial resources to improve their crops and caddle. Many farmers in their conversations associate money and loans with their crops and caddle as shown in visual 2. Maize and cow are the two words with the highest co-ocurrence for loans and money. These words represent crops and caddle, suggesting farmers' needs for loan and money around these resources
 
 **Implications for Producers Direct:**
-- How this finding can be used
-- What actions it suggests
+This finding suggest there is room for Producers Direct to improve farmers' financial inclusion. First by educating farmers through Farmers Guides, courses, wordshops, etc... so they learn further about what to grow and how to grow it. And second, partnering with local banks and finding loans for the farmers who produce the highest profit.
 
 ## Visualizations
 
-### [Visualization 1 Title]
-![Visualization 1](Visuals/viz1.png)
+### [Word Cloud]
+![Visualization 1A](Visuals/visual1a.png)
 
-**Interpretation**: What this visualization shows and why it matters.
+**Interpretation**: This graphs show the most common words in the text visually. It shows the constrast between translated and non-translated text
 
-### [Visualization 2 Title]
-![Visualization 2](visualizations/viz2.png)
+### [Word Frequency Graph]
+![Visualization 1B](visualizations/visual1b.png)
 
-**Interpretation**: What this visualization shows and why it matters.
+**Interpretation**: This graph shows the frequency count for the most common words. It assist in providing more granular detail about words' commonalities 
+
+### [Network Keyword Graph]
+![Visualization 2](visualizations/visual2.png)
+
+**Interpretation**: This graph shows the main financial inclusion keywords found in the text along side their most co-occuring words. This aids in identifying the type of financial inclusion keywords used in the text and the context in which they are used
 
 ## Limitations and Challenges
 
-### Data Limitations
-- Missing data issues
-- Data quality concerns
-- Sample size or coverage limitations
-
 ### Methodological Limitations
-- Assumptions made
 - Simplifications required
+   - English questions are geared towards the same topics as other languages
+   - Over 2000 characters were translated to English but only questions written in English were used for most of the analysis
 - Alternative approaches not explored
+    -  A sample of a few thousand characters translated may not provide greater insight than just collecting the questions that are already in English. However, exploring a sample with at least 10 million characters translated from other languages may uncover additional insight
 
 ### Technical Challenges
 - Computational constraints
+    - Only sample of 2000 translated character could be generated
 - Translation accuracy issues
-- Other technical hurdles
+    - There is a lot of nuance that can be missed by Google Translate. Implementing and testing other model may provide greater insights
 
-## Next Steps and Recommendations
-
-### For Further Analysis
-1. **Recommendation 1**: What could be explored next
-2. **Recommendation 2**: How to deepen this analysis
-3. **Recommendation 3**: Related questions to investigate
-
-### For Producers Direct
-1. **Action 1**: Specific recommendation for the organization
-2. **Action 2**: How to use these insights
-3. **Action 3**: What additional data or resources would help
-
-## Files in This Contribution
-
-```
-your_name_analysis/
-├── README.md (this file)
-├── notebooks/
-│   ├── 01_data_exploration.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   └── 03_analysis.ipynb
-├── scripts/
-│   ├── data_loader.py
-│   ├── preprocessing.py
-│   └── visualization.py
-├── visualizations/
-│   ├── viz1.png
-│   ├── viz2.png
-│   └── viz3.png
-├── results/
-│   ├── summary_statistics.csv
-│   └── findings.md
-└── data/ (if applicable - only small derived datasets)
-    └── processed_sample.csv
-```
-
-## How to Run This Analysis
-
-### Prerequisites
-```bash
-pip install pandas numpy matplotlib seaborn jupyter
-```
-
-### Running the Analysis
-```bash
-# Navigate to the notebooks folder
-cd notebooks/
-
-# Start Jupyter Notebook
-jupyter notebook
-
-# Open and run notebooks in order:
-# 1. 01_data_exploration.ipynb
-# 2. 02_data_cleaning.ipynb
-# 3. 03_analysis.ipynb
-```
-
-## References and Resources
-
-### Academic Papers
-- Author, A. (Year). Title. Journal.
-
-### Datasets
-- Dataset Name. Source. URL.
-
-### Tools and Libraries
-- Library Name. Version. URL.
 
 ## Contact and Collaboration
 
-**Author**: [Your Name]
-**GitHub**: @hwilner
-**Slack**: @[your_slack_handle]
+**Author**: [Juan Eric Acha]
+**GitHub**: @juaneacha
 
 **Collaboration Welcome**: 
 - Open to feedback and suggestions
 - Happy to collaborate on related analyses
 - Available to answer questions about this approach
 
-## Acknowledgments
-
-- Thanks to [other contributors] for [specific help]
-- Built upon work by [other contributors] in [other challenges]
-- Inspired by [specific approach or paper]
-
----
-
-**Last Updated**: [Date]
-**Status**: [In Progress / Complete / Needs Review]
+**Last Updated**: [12/7/2025]
+**Status**: [Complete]
